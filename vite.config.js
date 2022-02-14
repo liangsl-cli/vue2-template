@@ -10,5 +10,14 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
+  server: {
+    host: true,
+    proxy: {
+      // '/aj_project': {
+      //   target: 'http://157.0.243.82:9090/',
+      //   changeOrigin: true
+      // }
+    }
+  },
   plugins: [createVuePlugin()],
 })
